@@ -57,11 +57,11 @@ npx serve .
 
 ---
 
-## ⚙️ Form Submissions (Web3Forms / Formspree)
+## ⚙️ Form Submissions (Web3Forms)
 
-Both the Free Store Audit form on `index.html` and the Contact form on `contact.html` are pre-configured to work with Web3Forms or Formspree:
-- In both forms, replace `YOUR_ACCESS_KEY_HERE` with your free access key from [Web3Forms](https://web3forms.com) or [Formspree](https://formspree.io).
-- While left as `YOUR_ACCESS_KEY_HERE`, the forms automatically operate in **Simulation Mode** (validating input and displaying the success screen without throwing network errors).
+The Free Store Audit modal across all pages and the Contact form on `contact.html` are configured to deliver leads directly to email via [Web3Forms](https://web3forms.com):
+- Submissions post as JSON to `https://api.web3forms.com/submit` with honeypot spam protection (`botcheck`).
+- Dynamic button states ("Sending..."), validation checks, and inline success confirmation are included.
 
 ---
 

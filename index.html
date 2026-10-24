@@ -51,10 +51,12 @@
 
     <!-- Audit Form -->
     <form id="auditModalForm" onsubmit="handleAuditModalSubmit(event)" novalidate class="space-y-3.5">
-      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+      <input type="hidden" name="access_key" value="551d55dd-cc97-403d-9929-4713ba42ef1b">
+      <input type="hidden" name="subject" value="New Free Store Audit Request - Aabzone">
+      <input type="hidden" name="from_name" value="Aabzone Website">
       <input type="hidden" name="form_type" value="Free Store Audit Request Popup">
-
-      <div class="grid sm:grid-cols-2 gap-3.5">
+      <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+<div class="grid sm:grid-cols-2 gap-3.5">
         <div>
           <label class="block text-slate-300 text-xs font-semibold uppercase tracking-wider mb-1.5">Full Name <span class="text-brand-orange">*</span></label>
           <input type="text" id="auditModalName" name="name" required placeholder="John Smith" class="w-full bg-white/5 border border-white/10 rounded-xl px-3.5 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-base sm:text-sm min-h-[44px]">
@@ -174,72 +176,7 @@
     }
   });
 
-  /* 6. Form Submission Handler for On-Page Audit Form */
-  async function handleAuditSubmit(e) {
-    e.preventDefault();
-    var form = document.getElementById('auditForm');
-    var errorBox = document.getElementById('auditFormError');
-    var successBox = document.getElementById('auditFormSuccess');
-    var name = document.getElementById('auditName').value.trim();
-    var email = document.getElementById('auditEmail').value.trim();
-    var brand = document.getElementById('auditBrand').value.trim();
-    var asin = document.getElementById('auditAsin').value.trim();
-    var marketplace = document.getElementById('auditMarketplace').value.trim();
-    var revenue = document.getElementById('auditRevenue').value;
-
-    /* Validation */
-    var emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    if (!name || !email || !emailValid || !brand || !asin || !marketplace || !revenue) {
-      if (errorBox) errorBox.classList.remove('hidden');
-      return;
-    }
-    if (errorBox) errorBox.classList.add('hidden');
-
-    var submitBtn = document.getElementById('auditSubmitBtn');
-    if (submitBtn) {
-      submitBtn.disabled = true;
-      submitBtn.innerText = 'Submitting Audit Request...';
-    }
-
-    var accessKey = form.querySelector('input[name="access_key"]')?.value || '';
-    if (!accessKey || accessKey === 'YOUR_ACCESS_KEY_HERE') {
-      setTimeout(function() {
-        form.classList.add('hidden');
-        if (successBox) successBox.classList.remove('hidden');
-      }, 500);
-      return;
-    }
-
-    try {
-      var res = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: new FormData(form)
-      });
-      var data = await res.json();
-      if (data.success) {
-        form.classList.add('hidden');
-        if (successBox) successBox.classList.remove('hidden');
-      } else {
-        if (errorBox) {
-          var p = errorBox.querySelector('p:last-child');
-          if (p) p.innerText = data.message || 'Submission error. Please try again.';
-          errorBox.classList.remove('hidden');
-        }
-      }
-    } catch (err) {
-      if (errorBox) {
-        var p = errorBox.querySelector('p:last-child');
-        if (p) p.innerText = 'Network error. Please try again.';
-        errorBox.classList.remove('hidden');
-      }
-    } finally {
-      if (submitBtn) {
-        submitBtn.disabled = false;
-        submitBtn.innerText = 'Get My Free Store Audit →';
-      }
-    }
-  }
-
+  
   /* 4. FAQ accordion toggle */
   function toggleFaq(btn) {
     var body = btn.nextElementSibling;
@@ -352,63 +289,92 @@
   async function handleAuditModalSubmit(e) {
     e.preventDefault();
     var form = document.getElementById('auditModalForm');
+    if (!form) return;
     var errorBox = document.getElementById('auditModalError');
     var successBox = document.getElementById('auditModalSuccess');
+    var submitBtn = document.getElementById('auditModalSubmitBtn');
+
     var name = (document.getElementById('auditModalName')?.value || '').trim();
     var email = (document.getElementById('auditModalEmail')?.value || '').trim();
     var brand = (document.getElementById('auditModalBrand')?.value || '').trim();
     var asin = (document.getElementById('auditModalAsin')?.value || '').trim();
     var marketplace = (document.getElementById('auditModalMarketplace')?.value || '').trim();
     var revenue = document.getElementById('auditModalRevenue')?.value || '';
+    var adSpend = (document.getElementById('auditModalAdSpend')?.value || '').trim();
+    var challenge = document.getElementById('auditModalChallenge')?.value || '';
+
+    // Honeypot spam check
+    var botcheck = form.querySelector('input[name="botcheck"]');
+    if (botcheck && botcheck.checked) {
+      return;
+    }
 
     var emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     if (!name || !email || !emailValid || !brand || !asin || !marketplace || !revenue) {
-      if (errorBox) errorBox.classList.remove('hidden');
+      if (errorBox) {
+        var p = errorBox.querySelector('p:last-child');
+        if (p) p.innerText = 'Please check the required fields and provide a valid email.';
+        errorBox.classList.remove('hidden');
+      }
       return;
     }
     if (errorBox) errorBox.classList.add('hidden');
 
-    var submitBtn = document.getElementById('auditModalSubmitBtn');
+    var originalBtnText = submitBtn ? submitBtn.innerText : 'Get My Free Store Audit →';
     if (submitBtn) {
       submitBtn.disabled = true;
-      submitBtn.innerText = 'Submitting Audit Request...';
+      submitBtn.innerText = 'Sending...';
     }
 
-    var accessKey = form.querySelector('input[name="access_key"]')?.value || '';
-    if (!accessKey || accessKey === 'YOUR_ACCESS_KEY_HERE') {
-      setTimeout(function() {
-        form.classList.add('hidden');
-        if (successBox) successBox.classList.remove('hidden');
-      }, 500);
-      return;
-    }
+    var payload = {
+      access_key: "551d55dd-cc97-403d-9929-4713ba42ef1b",
+      subject: "New Free Store Audit Request - Aabzone",
+      from_name: "Aabzone Website",
+      name: name,
+      email: email,
+      brand: brand,
+      asin_store: asin,
+      marketplace: marketplace,
+      monthly_revenue: revenue,
+      ad_spend: adSpend,
+      challenge: challenge,
+      form_type: "Free Store Audit Request Popup"
+    };
 
     try {
       var res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        body: new FormData(form)
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(payload)
       });
       var data = await res.json();
-      if (data.success) {
+      if (data.success === true) {
+        form.reset();
         form.classList.add('hidden');
         if (successBox) successBox.classList.remove('hidden');
       } else {
         if (errorBox) {
           var p = errorBox.querySelector('p:last-child');
-          if (p) p.innerText = data.message || 'Submission error. Please try again.';
+          if (p) p.innerText = 'Something went wrong, please try again';
           errorBox.classList.remove('hidden');
+        }
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerText = originalBtnText;
         }
       }
     } catch (err) {
       if (errorBox) {
         var p = errorBox.querySelector('p:last-child');
-        if (p) p.innerText = 'Network error. Please try again.';
+        if (p) p.innerText = 'Something went wrong, please try again';
         errorBox.classList.remove('hidden');
       }
-    } finally {
       if (submitBtn) {
         submitBtn.disabled = false;
-        submitBtn.innerText = 'Get My Free Store Audit →';
+        submitBtn.innerText = originalBtnText;
       }
     }
   }
