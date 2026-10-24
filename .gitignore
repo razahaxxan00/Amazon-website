@@ -37,11 +37,11 @@ fba_agency_website_updated.html
 # Legacy Vite App Artifacts
 api/
 src/
-# public/
 vite.config.js
 .oxlintrc.json
 .env.example
 package.json
-scratch/public/*.svg
+public/*.svg
 public/*.txt
 public/*.xml
+scratch/
