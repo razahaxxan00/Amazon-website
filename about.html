@@ -91,7 +91,20 @@ pre, code, table { max-width: 100%; overflow-x: auto; word-break: break-word; }
 @media (prefers-reduced-motion: reduce) { *, ::before, ::after { animation-delay: -1ms !important; animation-duration: 1ms !important; animation-iteration-count: 1 !important; background-attachment: initial !important; scroll-behavior: auto !important; transition-delay: 0s !important; transition-duration: 0s !important; } }
 /* Performance: Reduce heavy GPU blur on phones */
 @media (max-width: 768px) { .blur-3xl, .blur-2xl { filter: blur(20px) !important; opacity: 0.3 !important; } }
+
+@media (scripting: none) {
+  .reveal, .fade-in, .fade-up, [data-aos], .animate-on-scroll { opacity: 1 !important; transform: none !important; visibility: visible !important; }
+}
 </style>
+<noscript>
+<style>
+.reveal, .fade-in, .fade-up, [data-aos], .animate-on-scroll { opacity: 1 !important; transform: none !important; visibility: visible !important; }
+
+@media (scripting: none) {
+  .reveal, .fade-in, .fade-up, [data-aos], .animate-on-scroll { opacity: 1 !important; transform: none !important; visibility: visible !important; }
+}
+</style>
+</noscript>
 </head>
 <body class="bg-brand-blue text-white overflow-x-hidden">
 
@@ -467,45 +480,70 @@ pre, code, table { max-width: 100%; overflow-x: auto; word-break: break-word; }
 </div>
 
 <script>
-// 1. Reveal on scroll
-const obs = new IntersectionObserver(e => e.forEach(r => {
-  if (r.isIntersecting) {
-    r.target.classList.add('visible');
-    obs.unobserve(r.target);
-  }
-}), { threshold: 0.08 });
-document.querySelectorAll('.reveal').forEach(r => obs.observe(r));
+  /* 1. Safe Reveal on scroll with fallback */
+  (function() {
+    function makeAllVisible() {
+      try {
+        var elements = document.querySelectorAll('.reveal, .fade-in, .fade-up, [data-aos], .animate-on-scroll');
+        elements.forEach(function(el) {
+          el.classList.add('visible');
+        });
+      } catch (e) {}
+    }
 
-// 2. Cookie Consent Management
-function checkCookieConsent() {
-  if (!localStorage.getItem('aabzone_cookies')) {
-    setTimeout(() => {
-      const el = document.getElementById('cookieNotice');
-      if (el) el.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
-    }, 1000);
-  }
-}
-function acceptCookies() {
-  localStorage.setItem('aabzone_cookies', 'accepted');
-  closeCookieNotice();
-}
-function declineCookies() {
-  localStorage.setItem('aabzone_cookies', 'declined');
-  closeCookieNotice();
-}
-function closeCookieNotice() {
-  const el = document.getElementById('cookieNotice');
-  if (el) el.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
-}
-document.addEventListener('DOMContentLoaded', checkCookieConsent);
+    /* Fallback: after 1 second, make all reveal elements visible */
+    setTimeout(makeAllVisible, 1000);
 
-// Mobile menu close on link tap
-document.querySelectorAll('#mob a').forEach(a => {
-  a.addEventListener('click', () => {
-    const m = document.getElementById('mob');
-    if (m) m.classList.add('hidden');
+    if (!('IntersectionObserver' in window)) {
+      makeAllVisible();
+      return;
+    }
+
+    try {
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(r) {
+          if (r.isIntersecting) {
+            r.target.classList.add('visible');
+            obs.unobserve(r.target);
+          }
+        });
+      }, { threshold: 0.08 });
+      document.querySelectorAll('.reveal').forEach(function(r) { obs.observe(r); });
+    } catch (err) {
+      makeAllVisible();
+    }
+  })();
+
+  /* 2. Cookie Consent Management */
+  function checkCookieConsent() {
+    if (!localStorage.getItem('aabzone_cookies') && !localStorage.getItem('hq_cookies')) {
+      setTimeout(function() {
+        var el = document.getElementById('cookieNotice');
+        if (el) el.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+      }, 1000);
+    }
+  }
+  function acceptCookies() {
+    localStorage.setItem('aabzone_cookies', 'accepted');
+    closeCookieNotice();
+  }
+  function declineCookies() {
+    localStorage.setItem('aabzone_cookies', 'declined');
+    closeCookieNotice();
+  }
+  function closeCookieNotice() {
+    var el = document.getElementById('cookieNotice');
+    if (el) el.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+  }
+  document.addEventListener('DOMContentLoaded', checkCookieConsent);
+
+  /* 3. Mobile menu close on link tap */
+  document.querySelectorAll('#mob a').forEach(function(a) {
+    a.addEventListener('click', function() {
+      var m = document.getElementById('mob');
+      if (m) m.classList.add('hidden');
+    });
   });
-});
 </script>
 
 </body>
