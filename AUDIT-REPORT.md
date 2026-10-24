@@ -2,7 +2,7 @@
 
 **Date of Audit:** October 2026  
 **Audited Target:** Aabzone Static Agency Website (US & UK Amazon FBA Niche)  
-**Production Domain:** `https://YOURDOMAIN.com`  
+**Production Domain:** `https://aabzone.com`  
 **Status:** All Critical & High Priority Technical/Legal Fixes Implemented  
 
 ---
@@ -57,8 +57,8 @@ This report documents the full-scale audit and enhancement performed across the 
 ### D. Technical SEO & Rich Snippets
 * **Fixes Applied:**
   - Generated dynamic, fully qualified XML sitemap at [`sitemap.xml`](sitemap.xml) encompassing all 20 pages (9 core pages, 10 FBA blogs, and blogs hub).
-  - Validated crawl directives in [`robots.txt`](robots.txt) referencing `https://YOURDOMAIN.com/sitemap.xml`.
-  - Canonical link tags `<link rel="canonical" href="https://YOURDOMAIN.com/...">` added to all pages.
+  - Validated crawl directives in [`robots.txt`](robots.txt) referencing `https://aabzone.com/sitemap.xml`.
+  - Canonical link tags `<link rel="canonical" href="https://aabzone.com/...">` added to all pages.
   - Structured JSON-LD metadata for `Organization`, `WebSite`, `ContactPage`, and `BlogPosting` schemas.
   - Full Open Graph and Twitter Card tags configured for rich link previews.
 

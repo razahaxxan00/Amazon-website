@@ -5,9 +5,9 @@ Aabzone is a high-performance, dark-themed agency website engineered for Amazon 
 ---
 
 ## 🌐 Custom Domain
-The site is configured for the custom domain **`YOURDOMAIN.com`**:
-- Base URL: `https://YOURDOMAIN.com`
-- A `CNAME` file containing `YOURDOMAIN.com` is committed in the repository root.
+The site is configured for the custom domain **`aabzone.com`**:
+- Base URL: `https://aabzone.com`
+- A `CNAME` file containing `aabzone.com` is committed in the repository root.
 - DNS A Records (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) point to GitHub Pages.
 
 ---
