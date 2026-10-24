@@ -16,7 +16,7 @@ The site is configured for the custom domain **`YOURDOMAIN.com`**:
 
 | Page | File | Description |
 |---|---|---|
-| **Home** | [`index.html`](index.html) | Brand introduction, TACoS philosophy, problem breakdown, social proof, and embedded Free Store Audit form (`#audit`). |
+| **Home** | [`index.html`](index.html) | Brand introduction, TACoS philosophy, problem breakdown, social proof, and embedded Free Store Audit form (`audit modal`). |
 | **About** | [`about.html`](about.html) | Founder profile of Haseeb Qafi, Aabzone service highlights, marketplace coverage, and core values. |
 | **Services** | [`services.html`](services.html) | PPC Management, Full-Service FBA, Listing Optimization, and Inventory Logistics. |
 | **How We Help** | [`how-we-help.html`](how-we-help.html) | The 5-step Growth System (Audit, Architect, Accelerate, Automate, Analyze). |

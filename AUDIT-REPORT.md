@@ -47,8 +47,8 @@ This report documents the full-scale audit and enhancement performed across the 
   - Forms were previously frontend-only without a defined backend endpoint.
   - Needed guarantee that the audit form is strictly isolated to `index.html`.
 * **Fixes Applied:**
-  - Embedded the Free Store Audit form as an on-page section (`#audit`) exclusively on `index.html`.
-  - Removed `#auditModal` from every other page. All external CTAs link to `index.html#audit`.
+  - Embedded the Free Store Audit form as an on-page section (`audit modal`) exclusively on `index.html`.
+  - Removed `audit modalModal` from every other page. All external CTAs link to `the audit modal popup`.
   - Configured both `auditForm` and `contactForm` with Web3Forms / Formspree compatibility:
     - Included `access_key` hidden field (defaulting to safe local simulation mode).
     - Added user feedback for validation errors and submission success screens.
@@ -68,8 +68,8 @@ This report documents the full-scale audit and enhancement performed across the 
 
 - [x] Earnings/Results Disclaimers visible on all case studies and service pages.
 - [x] Official Amazon Trademark Disclaimer embedded in every footer.
-- [x] Request for Audit form appears ONLY on `index.html` (`#audit`).
-- [x] No page contains `#auditModal` or popup triggers.
+- [x] Request for Audit form appears ONLY on `index.html` (`audit modal`).
+- [x] No page contains `audit modalModal` or popup triggers.
 - [x] No page has "Contact Us" in the header navigation (desktop or mobile).
 - [x] No page has an email address or mailto link in the footer.
 - [x] Footer features dedicated "Blogs" column with links to guides and `blogs.html`.
