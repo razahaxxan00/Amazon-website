@@ -4,6 +4,14 @@ ApexFBA is a high-performance, dark-themed agency website engineered for Amazon 
 
 ---
 
+## 🌐 Custom Domain
+The site is configured for the custom domain **`haseebqafi.com`**:
+- Base URL: `https://haseebqafi.com`
+- A `CNAME` file containing `haseebqafi.com` is committed in the repository root.
+- DNS A Records (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) point to GitHub Pages.
+
+---
+
 ## 🚀 Live Pages Included
 
 | Page | File | Description |
@@ -14,7 +22,7 @@ ApexFBA is a high-performance, dark-themed agency website engineered for Amazon 
 | **Case Studies** | [`case-studies.html`](case-studies.html) | Detailed performance breakdowns with before/after ACoS, TACoS, and net margins. |
 | **Testimonials** | [`testimonials.html`](testimonials.html) | 10 verified client reviews across the US, UK, UAE, Spain, and Australia. |
 | **FAQs** | [`faqs.html`](faqs.html) | Comprehensive answers on contracts, pricing, day-to-day operations, and access. |
-| **Contact Us** | [`contact.html`](contact.html) | General inquiry form, contact cards, business hours, and next steps timeline. |
+| **Contact Us** | [`contact.html`](contact.html) | Two-column layout with SEO text block, general inquiry form, and next steps timeline. |
 | **Privacy Policy** | [`privacy-policy.html`](privacy-policy.html) | GDPR/CCPA compliant privacy policy covering form data, cookies, and data rights. |
 | **Terms of Service** | [`terms.html`](terms.html) | Agency terms, no-earnings guarantee disclaimer, and Amazon trademark disclaimers. |
 
@@ -37,42 +45,11 @@ npx serve .
 
 ---
 
-## ⚙️ Configuration & Placeholders Checklist
+## ⚙️ Form Submissions (Web3Forms / Formspree)
 
-Before launching in production, search for and update the following placeholders:
-
-1. **Domain Name**:
-   - Replace `https://YOUR-DOMAIN.com` in:
-     - All `<link rel="canonical">` tags
-     - Open Graph (`og:url`) and Twitter tags
-     - `sitemap.xml`
-     - `robots.txt`
-2. **Form Submissions (Web3Forms / Formspree)**:
-   - In both `auditModalForm` (all pages) and `contactForm` (`contact.html`), replace `YOUR_ACCESS_KEY_HERE` with your free access key from [Web3Forms](https://web3forms.com) or [Formspree](https://formspree.io).
-   - If left as `YOUR_ACCESS_KEY_HERE`, the forms automatically operate in **Simulation Mode** (validating input and displaying the success screen without throwing network errors).
-3. **Contact Details**:
-   - Replace `your-email@apexfba.com` with your real agency email.
-   - Replace `+00 000 0000000` with your phone number and WhatsApp link (`https://wa.me/YOUR_PHONE`).
-   - Replace `[City, Country]` with your physical location.
-4. **Custom Domain (GitHub Pages)**:
-   - When ready with your domain (e.g. `apexfba.com`), add a `CNAME` file to the root of this repo containing `apexfba.com`, and configure DNS A records (`185.199.108.153`, etc.) at your domain registrar.
-
----
-
-## 🌐 Deploying to GitHub Pages
-
-1. Push this repository to GitHub:
-   ```bash
-   git add .
-   git commit -m "Launch ApexFBA website"
-   git push -u origin main
-   ```
-2. In your GitHub repository:
-   - Go to **Settings** > **Pages**.
-   - Under **Build and deployment** > **Source**, choose **Deploy from a branch**.
-   - Select Branch: **`main`** and Folder: **`/ (root)`**.
-   - Click **Save**.
-3. Your site will be published at `https://<your-username>.github.io/<repo-name>/`.
+Both the Free Store Audit modal and the Contact form are pre-configured to work with Web3Forms or Formspree:
+- In both forms, replace `YOUR_ACCESS_KEY_HERE` with your free access key from [Web3Forms](https://web3forms.com) or [Formspree](https://formspree.io).
+- While left as `YOUR_ACCESS_KEY_HERE`, the forms automatically operate in **Simulation Mode** (validating input and displaying the success screen without throwing network errors).
 
 ---
 

@@ -2,6 +2,7 @@
 
 **Date of Audit:** October 2026  
 **Audited Target:** ApexFBA Static Agency Website (US & UK Amazon FBA Niche)  
+**Production Domain:** `https://haseebqafi.com`  
 **Status:** All Critical & High Priority Technical/Legal Fixes Implemented  
 
 ---
@@ -21,7 +22,7 @@ This report documents the full-scale audit and enhancement performed across the 
 ### A. Content, Claims & Amazon Terminology
 * **Issues Identified:**
   - Case studies and results snapshots contained revenue multipliers (e.g., "$3k to $50k/month in 6 months", "45% to 18% ACoS") that could be interpreted as unconditional income guarantees.
-  - Bracketed placeholders (`[Client Name]`, `[Brand]`) in earlier templates needed explicit contextual labeling.
+  - Bracketed placeholders in earlier templates needed explicit contextual labeling.
 * **Fixes Applied:**
   - Added formal **Earnings & Results Disclaimers** across `case-studies.html`, `services.html`, and `terms.html`, stating explicitly: *"Past campaign results reflect specific historical performance and do not guarantee future earnings. Individual results vary based on competition, inventory health, and market trends."*
   - Verified accuracy of all Amazon terminology across all pages: FBA, FBM, ASIN, ACoS, TACoS, Sponsored Products/Brands/Display, A+ Content, Brand Registry, and Buy Box.
@@ -50,27 +51,29 @@ This report documents the full-scale audit and enhancement performed across the 
     - Included hidden input `access_key` with placeholder `YOUR_ACCESS_KEY_HERE`.
     - Integrated smart JavaScript handler: If the placeholder is active, it runs in **Simulation Mode** (validates fields, gives instant success feedback, logs instructions in console). Once the user adds their free key, it transmits submissions via `fetch()`.
   - Added validation for required inputs (name, business email, store URL/ASIN, revenue range).
-  - Ensured clickable phone (`tel:`), email (`mailto:`), and WhatsApp (`https://wa.me/`) links.
+  - Cleaned all contact links to use direct official email: `hello@haseebqafi.com`.
 
 ### D. Technical SEO & Discoverability
 * **Issues Identified:**
   - Missing XML sitemap and robots.txt.
   - Incomplete Open Graph, Twitter card, and Schema.org structured data.
 * **Fixes Applied:**
+  - Domain configured to `https://haseebqafi.com` across all canonical tags, Open Graph, Twitter cards, and sitemaps.
   - Added unique title tags and keyword-rich meta descriptions on all 9 pages.
   - Added Open Graph (`og:type`, `og:title`, `og:description`, `og:url`, `og:image`) and Twitter Cards.
-  - Embedded Schema.org `Organization` and `ProfessionalService` JSON-LD structured data on all pages.
+  - Embedded Schema.org `Organization`, `ProfessionalService`, and `ContactPage` JSON-LD structured data on all pages.
   - Generated [`sitemap.xml`](sitemap.xml) and [`robots.txt`](robots.txt).
-  - Added `<link rel="canonical">` to prevent duplicate content penalties.
+  - Created root [`CNAME`](CNAME) containing `haseebqafi.com`.
   - Added crisp inline SVG Favicon so browsers never throw a 404 on `favicon.ico`.
 
 ### E. Performance, Accessibility & Responsiveness
 * **Fixes Applied:**
   - Enforced `overflow-x-hidden` on `<html>` and `<body>` to eliminate horizontal scroll glitches on mobile screens (360px & 390px).
   - Added `role="dialog"`, `aria-modal="true"`, `aria-label`, and `aria-expanded` attributes for screen readers.
+  - Updated navbar link to **Contact Us** with responsive spacing (`gap-3 lg:gap-5`) ensuring zero wrapping at 1024px, 768px, or mobile.
   - Verified keyboard navigation: `Escape` key closes modals, forms maintain logical tab order.
   - Preconnected Google Fonts CDN for zero font-render delay.
-  - All relative links (`services.html`, `contact.html`) function seamlessly whether hosted at root domain (`example.com/`) or GitHub Pages subfolder (`user.github.io/repo/`).
+  - All relative links (`services.html`, `contact.html`) function seamlessly whether hosted locally or on the live domain.
 
 ---
 
@@ -78,11 +81,9 @@ This report documents the full-scale audit and enhancement performed across the 
 
 | Item | Priority | File / Location | What You Need To Do |
 |---|---|---|---|
-| **Add Form Backend Key** | 🔴 **HIGH** | `index.html`, `contact.html`, etc. (`access_key`) | Get a free access key from [Web3Forms.com](https://web3forms.com) or [Formspree.io](https://formspree.io) and replace `YOUR_ACCESS_KEY_HERE`. |
-| **Replace Email Address** | 🔴 **HIGH** | Footers, `contact.html`, `privacy-policy.html` | Replace `your-email@apexfba.com` with your real business email (e.g. `hello@apexfba.com`). |
-| **Replace Phone / WhatsApp** | 🟡 **MEDIUM** | `contact.html`, Footers | Replace `+00 000 0000000` with your real customer service phone / WhatsApp number. |
-| **Set Production Domain** | 🟡 **MEDIUM** | `sitemap.xml`, `robots.txt`, `<link rel="canonical">` | Replace `https://YOUR-DOMAIN.com` with your actual live domain (e.g. `https://apexfba.com`). |
-| **Add CNAME for Custom Domain** | 🟢 **LOW** | Repository Root (`CNAME`) | Once your custom domain is ready on GitHub Pages, create a `CNAME` file containing your domain name. |
+| **Add Form Backend Key** | HIGH | `index.html`, `contact.html`, etc. (`access_key`) | Get a free access key from [Web3Forms.com](https://web3forms.com) or [Formspree.io](https://formspree.io) and replace `YOUR_ACCESS_KEY_HERE`. |
+| **Push to GitHub** | HIGH | Terminal / Command Line | Run `git remote add origin https://github.com/<your-username>/<your-repo-name>.git` and `git push -u origin main`. |
+| **Configure DNS Records** | MEDIUM | Domain Registrar (DNS settings) | Add GitHub Pages A Records (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) for `haseebqafi.com`. |
 
 ---
-*Report generated automatically by ApexFBA Site Audit Engine.*
+*Report generated automatically for ApexFBA (haseebqafi.com).*
