@@ -1,13 +1,13 @@
-# Haseeb Qafi — Amazon FBA Agency Website
+# Aabzone — Amazon FBA Agency Website
 
-Haseeb Qafi is a high-performance, dark-themed agency website engineered for Amazon FBA brand owners in the US, UK, and global marketplaces. The site highlights full-service account management, profit-first PPC advertising, listing optimization, and inventory logistics.
+Aabzone is a high-performance, dark-themed agency website engineered for Amazon FBA brand owners in the US, UK, and global marketplaces. The site highlights full-service account management, profit-first PPC advertising, listing optimization, and inventory logistics.
 
 ---
 
 ## 🌐 Custom Domain
-The site is configured for the custom domain **`haseebqafi.com`**:
-- Base URL: `https://haseebqafi.com`
-- A `CNAME` file containing `haseebqafi.com` is committed in the repository root.
+The site is configured for the custom domain **`YOURDOMAIN.com`**:
+- Base URL: `https://YOURDOMAIN.com`
+- A `CNAME` file containing `YOURDOMAIN.com` is committed in the repository root.
 - DNS A Records (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) point to GitHub Pages.
 
 ---
@@ -65,4 +65,4 @@ Both the Free Store Audit form on `index.html` and the Contact form on `contact.
 ---
 
 ## ⚖️ Amazon Compliance Notice
-Haseeb Qafi is an independent service provider and is not affiliated with, endorsed by, or sponsored by Amazon.com, Inc. Amazon and FBA are trademarks of Amazon.com, Inc.
+Aabzone is an independent service provider and is not affiliated with, endorsed by, or sponsored by Amazon.com, Inc. Amazon and FBA are trademarks of Amazon.com, Inc.
