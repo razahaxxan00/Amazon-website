@@ -1,0 +1,44 @@
+# Operating System Junk
+Thumbs.db
+Desktop.ini
+desktop.ini
+.DS_Store
+$RECYCLE.BIN/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Node & Package Managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Builds & Temporary Dirs
+dist/
+build/
+surge-deploy/
+.cache/
+*.log
+
+# Backups & Archives
+*.zip
+*.tar.gz
+*.bak
+fba_agency_v2.html
+fba_agency_website.html
+fba_agency_website_updated.html
+
+# Legacy Vite App Artifacts
+api/
+src/
+public/
+vite.config.js
+.oxlintrc.json
+.env.example
+package.json

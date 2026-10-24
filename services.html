@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth overflow-x-hidden">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon FBA Services | ApexFBA — PPC, Listing & Logistics</title>
+<meta name="description" content="Explore ApexFBA services: Amazon PPC Management, Full-Service FBA, Listing Optimization & Creative, and FBA Logistics. Built for net margin.">
+<meta name="keywords" content="Amazon PPC management, Amazon listing optimization, full service Amazon agency, FBA inventory management">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/services">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://YOUR-DOMAIN.com/services">
+<meta property="og:title" content="Amazon FBA Services | ApexFBA — PPC, Listing & Logistics">
+<meta property="og:description" content="Explore ApexFBA services: Amazon PPC Management, Full-Service FBA, Listing Optimization & Creative, and FBA Logistics. Built for net margin.">
+<meta property="og:image" content="https://YOUR-DOMAIN.com/og-image.jpg">
+<meta property="og:site_name" content="ApexFBA">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://YOUR-DOMAIN.com/services">
+<meta name="twitter:title" content="Amazon FBA Services | ApexFBA — PPC, Listing & Logistics">
+<meta name="twitter:description" content="Explore ApexFBA services: Amazon PPC Management, Full-Service FBA, Listing Optimization & Creative, and FBA Logistics. Built for net margin.">
+<meta name="twitter:image" content="https://YOUR-DOMAIN.com/og-image.jpg">
+
+<!-- Favicon (Inline SVG Data URI) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f97316'%3E%3Cpath d='M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3z'/%3E%3C/svg%3E">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["Organization", "ProfessionalService"],
+  "name": "ApexFBA",
+  "url": "https://YOUR-DOMAIN.com",
+  "logo": "https://YOUR-DOMAIN.com/logo.svg",
+  "description": "Explore ApexFBA services: Amazon PPC Management, Full-Service FBA, Listing Optimization & Creative, and FBA Logistics. Built for net margin.",
+  "telephone": "+00-000-0000000",
+  "email": "your-email@apexfba.com",
+  "areaServed": ["United States", "United Kingdom", "Canada", "Australia", "Europe"],
+  "serviceType": [
+    "Amazon FBA Store Management",
+    "Amazon PPC Management",
+    "Amazon Listing Optimization",
+    "Amazon Product Research & Sourcing",
+    "Amazon Inventory & Supply Chain Logistics"
+  ]
+}
+</script>
+
+<!-- Styles & Fonts -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{'brand-blue':'#0f172a','brand-navy':'#1e293b','brand-orange':'#f97316','brand-orangeHov':'#ea6c0a'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{font-family:'Inter',sans-serif}
+.glass-nav{backdrop-filter:blur(16px);background:rgba(15,23,42,.92)}
+.gradient-text{background:linear-gradient(135deg,#f97316,#fbbf24);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.btn-glow{box-shadow:0 0 20px rgba(249,115,22,.4)}
+.btn-glow:hover{box-shadow:0 0 35px rgba(249,115,22,.65)}
+.scard{background:rgba(30,41,59,.55);border:1px solid rgba(255,255,255,.09);border-radius:1.25rem;backdrop-filter:blur(10px);transition:transform .3s,box-shadow .3s}
+.scard:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.tcard{background:rgba(30,41,59,.55);border:1px solid rgba(255,255,255,.09);border-radius:1.25rem;backdrop-filter:blur(10px);transition:transform .3s,box-shadow .3s}
+.tcard:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.star{color:#f97316}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:none}
+html{scroll-behavior:smooth}
+.ab{display:none}.ab.open{display:block}
+#auditModal{display:none}#auditModal.open{display:flex}
+</style>
+</head>
+<body class="bg-brand-blue text-white overflow-x-hidden">
+<!-- FREE STORE AUDIT MODAL — opens ONLY via openAuditModal() -->
+<div id="auditModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" class="fixed inset-0 z-[200] items-center justify-center px-4" style="background:rgba(0,0,0,.82);backdrop-filter:blur(8px);display:none">
+  <div class="bg-brand-navy border border-white/10 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 relative shadow-2xl">
+    <button id="auditModalClose" class="absolute top-4 right-4 text-slate-400 hover:text-white transition p-2 focus:outline-none" aria-label="Close Audit Modal">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <p class="text-brand-orange font-bold text-xs uppercase tracking-widest mb-2">Free Store Audit</p>
+    <h2 id="modalTitle" class="text-2xl font-black mb-1">Request Your Free Amazon Store Audit</h2>
+    <p class="text-slate-400 text-sm mb-6">A senior strategist will review your account and deliver a profit roadmap within 5 business days &mdash; 100% free, no obligation.</p>
+    
+    <div id="auditModalError" class="hidden mb-4 p-3 rounded-xl bg-red-500/10 border border-red-500/30 text-red-300 text-xs">
+      Something went wrong. Please check all required fields and try again.
+    </div>
+
+    <form id="auditModalForm" onsubmit="auditFormSubmit(event)" novalidate class="space-y-4">
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+      <input type="hidden" name="form_type" value="Free Store Audit Request">
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Full Name *</label>
+          <input type="text" id="auditName" name="name" required placeholder="John Smith" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-sm">
+        </div>
+        <div>
+          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Business Email *</label>
+          <input type="email" id="auditEmail" name="email" required placeholder="hello@yourbrand.com" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-sm">
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Phone / WhatsApp (optional)</label>
+          <input type="tel" id="auditPhone" name="phone" placeholder="+1 234 567 8900" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-sm">
+        </div>
+        <div>
+          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Brand / Store Name *</label>
+          <input type="text" id="auditBrand" name="brand" required placeholder="Your Brand Name" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-sm">
+        </div>
+      </div>
+      <div>
+        <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Amazon Store URL or ASIN *</label>
+        <input type="text" id="auditAsin" name="store_url_or_asin" required placeholder="https://amazon.com/dp/B0XXXXXX or ASIN" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-sm">
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Marketplace *</label>
+          <select id="auditMarketplace" name="marketplace" required class="w-full bg-brand-blue border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-orange transition text-sm">
+            <option value="" disabled selected>Select marketplace</option>
+            <option value="Amazon US">Amazon US</option>
+            <option value="Amazon UK">Amazon UK</option>
+            <option value="Both US & UK">Both US &amp; UK</option>
+            <option value="Amazon Canada">Amazon Canada</option>
+            <option value="Amazon Europe">Amazon Europe</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div>
+          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Monthly Revenue *</label>
+          <select id="auditRevenue" name="revenue" required class="w-full bg-brand-blue border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-orange transition text-sm">
+            <option value="" disabled selected>Select range</option>
+            <option value="Under $5k/mo">Under $5k/mo</option>
+            <option value="$5k-$15k/mo">$5k&ndash;$15k/mo</option>
+            <option value="$15k-$50k/mo">$15k&ndash;$50k/mo</option>
+            <option value="$50k+/mo">$50k+/mo</option>
+          </select>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Monthly Ad Spend</label>
+          <input type="text" id="auditAdSpend" name="ad_spend" placeholder="e.g. $2,000/mo" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-sm">
+        </div>
+        <div>
+          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Biggest Challenge</label>
+          <select id="auditChallenge" name="biggest_challenge" class="w-full bg-brand-blue border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-orange transition text-sm">
+            <option value="" disabled selected>Select challenge</option>
+            <option value="High ACoS / Low Profit">High ACoS / Low Profit</option>
+            <option value="Stockouts & Inventory Management">Stockouts &amp; Inventory Management</option>
+            <option value="Low Organic Ranking">Low Organic Ranking</option>
+            <option value="Listing Conversion & Creative">Listing Conversion &amp; Creative</option>
+            <option value="Time & Daily Account Operations">Time &amp; Daily Account Operations</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Anything Else We Should Know?</label>
+        <textarea id="auditNotes" name="notes" rows="3" placeholder="Tell us your main pain point..." class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-sm resize-none"></textarea>
+      </div>
+      <button type="submit" id="auditSubmitBtn" class="w-full bg-brand-orange hover:bg-brand-orangeHov text-white font-bold text-lg py-4 rounded-xl btn-glow transition">Get My Free Audit &rarr;</button>
+      <p class="text-slate-500 text-xs text-center">Your information is confidential and protected. We will never ask for your Amazon password.</p>
+    </form>
+    <div id="auditModalSuccess" class="hidden text-center py-8">
+      <div class="w-14 h-14 bg-green-500/20 border border-green-500/30 rounded-full flex items-center justify-center mx-auto mb-4">
+        <svg class="w-7 h-7 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+      </div>
+      <h3 class="text-xl font-black mb-2">Audit Request Received!</h3>
+      <p class="text-slate-400 text-sm">We&rsquo;ll review your account details and deliver your personalised growth roadmap within 3&ndash;5 business days.</p>
+    </div>
+  </div>
+</div>
+<header class="fixed top-0 inset-x-0 z-50 glass-nav border-b border-white/10" role="banner">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <a href="index.html" class="flex items-center gap-2 group" aria-label="ApexFBA Home">
+      <div class="w-8 h-8 rounded-lg bg-brand-orange flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
+        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3z"/></svg>
+      </div>
+      <span class="text-xl font-black text-white tracking-tight">Apex<span class="text-brand-orange">FBA</span></span>
+    </a>
+    <nav class="hidden md:flex items-center gap-5" aria-label="Main Navigation">
+      <a href="index.html" class="text-slate-400 hover:text-white font-medium text-sm transition focus:outline-none focus:ring-1 focus:ring-brand-orange rounded px-1">Home</a>
+      <div class="relative group">
+        <button type="button" aria-expanded="false" class="flex items-center gap-1 text-brand-orange font-bold text-sm focus:outline-none focus:ring-1 focus:ring-brand-orange rounded px-1">
+          Services
+          <svg class="w-4 h-4 ml-0.5 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+        </button>
+        <div class="absolute left-1/2 -translate-x-1/2 top-full mt-3 w-[520px] bg-brand-navy border border-white/10 rounded-2xl shadow-2xl p-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+          <p class="text-brand-orange text-[10px] font-bold uppercase tracking-widest mb-4">What We Do</p>
+          <div class="grid grid-cols-2 gap-2">
+            <a href="services.html#ppc" class="p-3 rounded-xl hover:bg-white/5 transition block"><p class="text-white text-sm font-bold">Amazon PPC Management</p><p class="text-slate-400 text-xs mt-0.5">Stop paying for clicks that don&rsquo;t convert.</p></a>
+            <a href="services.html#fba" class="p-3 rounded-xl hover:bg-white/5 transition block"><p class="text-white text-sm font-bold">Full-Service FBA Management</p><p class="text-slate-400 text-xs mt-0.5">Your Amazon channel, run end to end.</p></a>
+            <a href="services.html#listing" class="p-3 rounded-xl hover:bg-white/5 transition block"><p class="text-white text-sm font-bold">Listing Optimization &amp; Creative</p><p class="text-slate-400 text-xs mt-0.5">Turn browsers into buyers.</p></a>
+            <a href="services.html#logistics" class="p-3 rounded-xl hover:bg-white/5 transition block"><p class="text-white text-sm font-bold">FBA Logistics &amp; Inventory</p><p class="text-slate-400 text-xs mt-0.5">Never lose rank to a stockout.</p></a>
+          </div>
+          <div class="border-t border-white/10 mt-4 pt-3 flex items-center justify-between">
+            <p class="text-slate-500 text-xs">Not sure which service fits? We&rsquo;ll guide you.</p>
+            <button onclick="openAuditModal()" class="text-xs font-bold text-brand-orange hover:underline focus:outline-none">Get Free Audit &rarr;</button>
+          </div>
+        </div>
+      </div>
+      <a href="how-we-help.html" class="text-slate-400 hover:text-white font-medium text-sm transition focus:outline-none focus:ring-1 focus:ring-brand-orange rounded px-1">How We Help</a>
+      <a href="case-studies.html" class="text-slate-400 hover:text-white font-medium text-sm transition focus:outline-none focus:ring-1 focus:ring-brand-orange rounded px-1">Case Studies</a>
+      <a href="faqs.html" class="text-slate-400 hover:text-white font-medium text-sm transition focus:outline-none focus:ring-1 focus:ring-brand-orange rounded px-1">FAQs</a>
+      <a href="testimonials.html" class="text-slate-400 hover:text-white font-medium text-sm transition focus:outline-none focus:ring-1 focus:ring-brand-orange rounded px-1">Testimonials</a>
+      <a href="contact.html" class="text-slate-400 hover:text-white font-medium text-sm transition focus:outline-none focus:ring-1 focus:ring-brand-orange rounded px-1">Contact</a>
+      <button onclick="openAuditModal()" class="bg-brand-orange hover:bg-brand-orangeHov text-white text-sm font-bold px-5 py-2.5 rounded-full btn-glow transition focus:outline-none focus:ring-2 focus:ring-brand-orange">Free Store Audit</button>
+    </nav>
+    <button class="md:hidden p-2 text-slate-400 hover:text-white focus:outline-none" aria-label="Toggle Navigation Menu" onclick="document.getElementById('mob').classList.toggle('hidden')">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+  <div id="mob" class="hidden md:hidden bg-brand-navy border-t border-white/10 px-4 py-4 space-y-1">
+    <a href="index.html" class="block px-3 py-2.5 text-white hover:text-brand-orange font-medium text-sm rounded-lg hover:bg-white/5 transition">Home</a>
+    <a href="services.html" class="block px-3 py-2.5 text-brand-orange font-bold text-sm rounded-lg hover:bg-white/5 transition">Services</a>
+    <a href="how-we-help.html" class="block px-3 py-2.5 text-white hover:text-brand-orange font-medium text-sm rounded-lg hover:bg-white/5 transition">How We Help</a>
+    <a href="case-studies.html" class="block px-3 py-2.5 text-white hover:text-brand-orange font-medium text-sm rounded-lg hover:bg-white/5 transition">Case Studies</a>
+    <a href="faqs.html" class="block px-3 py-2.5 text-white hover:text-brand-orange font-medium text-sm rounded-lg hover:bg-white/5 transition">FAQs</a>
+    <a href="testimonials.html" class="block px-3 py-2.5 text-white hover:text-brand-orange font-medium text-sm rounded-lg hover:bg-white/5 transition">Testimonials</a>
+    <a href="contact.html" class="block px-3 py-2.5 text-white hover:text-brand-orange font-medium text-sm rounded-lg hover:bg-white/5 transition">Contact</a>
+    <button onclick="openAuditModal()" class="block w-full bg-brand-orange text-white text-center py-2.5 rounded-xl text-sm font-bold mt-2">Free Store Audit</button>
+  </div>
+</header>
+<main class="pt-16">
+<section class="pt-32 pb-16 text-center relative">
+  <div class="absolute -top-20 right-0 w-[500px] h-[500px] bg-brand-orange/8 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="max-w-4xl mx-auto px-4 relative z-10 reveal">
+    <p class="text-brand-orange font-bold text-xs uppercase tracking-widest mb-4">What We Offer</p>
+    <h1 class="text-4xl md:text-6xl font-black mb-6">Amazon FBA Services Engineered for <span class="gradient-text">Net Profit</span></h1>
+    <p class="text-slate-400 text-lg max-w-3xl mx-auto">Choose a single service or hand us the whole account. Every engagement is measured by TACoS, margin, and cash flow &mdash; not impressions or clicks.</p>
+  </div>
+</section>
+
+<section id="ppc" class="py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 gap-16 items-start reveal">
+      <div>
+        <span class="inline-block bg-brand-orange/15 border border-brand-orange/30 text-brand-orange text-xs font-bold px-4 py-2 rounded-full mb-6">Service A</span>
+        <h2 class="text-3xl md:text-4xl font-black mb-2">Amazon PPC Management</h2>
+        <p class="text-brand-orange font-semibold text-lg mb-6">Stop paying for clicks that don&rsquo;t convert.</p>
+        <p class="text-slate-400 text-base leading-relaxed mb-6">We rebuild and manage your entire advertising account against your break-even ACoS and target TACoS &mdash; not vanity metrics.</p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Full account restructure by match type, intent, and funnel stage</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Sponsored Products, Brands, and Display management</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Keyword harvesting, negative keyword hygiene, and search-term audits</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Bid and placement optimisation against your break-even ACoS</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Dayparting and budget pacing for peak seasons</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Weekly performance reports with a TACoS trend line</span></li>
+        </ul>
+        <div class="bg-white/5 border border-white/10 rounded-xl p-5 mb-6">
+          <p class="text-slate-400 text-xs uppercase tracking-wider mb-2">Ideal For</p>
+          <p class="text-slate-300 text-sm">Sellers with at least $10,000/month in revenue who have a decent product but a bloated ACoS, or who are tired of agencies reporting vanity metrics.</p>
+        </div>
+        <div class="bg-brand-orange/10 border border-brand-orange/30 rounded-xl p-5 mb-8">
+          <p class="text-brand-orange text-xs font-bold uppercase tracking-wider mb-1">Typical Outcome</p>
+          <p class="text-white font-bold">15&ndash;40% reduction in wasted spend within the first 60&ndash;90 days.*</p>
+        </div>
+        <a onclick="openAuditModal()" href="#" class="bg-brand-orange hover:bg-brand-orangeHov text-white font-bold px-8 py-3.5 rounded-full btn-glow inline-flex items-center gap-2 transition">Get PPC Audit</a>
+      </div>
+      <div class="scard p-10">
+        <p class="text-brand-orange font-bold text-sm uppercase tracking-widest mb-6">Results Snapshot</p>
+        <div class="space-y-4">
+          <div class="bg-white/5 rounded-xl p-5"><p class="text-slate-400 text-xs mb-1">Average ACoS Reduction</p><p class="text-white text-3xl font-black">43% &rarr; 16%</p><p class="text-slate-500 text-xs">within 90 days</p></div>
+          <div class="bg-white/5 rounded-xl p-5"><p class="text-slate-400 text-xs mb-1">TACoS After Optimisation</p><p class="text-white text-3xl font-black">7&ndash;12%</p><p class="text-slate-500 text-xs">managed accounts average</p></div>
+          <div class="bg-white/5 rounded-xl p-5"><p class="text-slate-400 text-xs mb-1">Ad Revenue Uplift (6 mo)</p><p class="text-white text-3xl font-black">+180%</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fba" class="py-20 bg-brand-navy/40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 gap-16 items-start reveal">
+      <div class="scard p-10 order-2 md:order-1">
+        <p class="text-brand-orange font-bold text-sm uppercase tracking-widest mb-6">Everything Included</p>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="bg-white/5 rounded-xl p-4"><p class="text-white text-sm font-bold">Dedicated AM</p><p class="text-slate-400 text-xs mt-1">Account manager + strategist</p></div>
+          <div class="bg-white/5 rounded-xl p-4"><p class="text-white text-sm font-bold">PPC + Listings</p><p class="text-slate-400 text-xs mt-1">Complete oversight</p></div>
+          <div class="bg-white/5 rounded-xl p-4"><p class="text-white text-sm font-bold">Buy Box Monitor</p><p class="text-slate-400 text-xs mt-1">Pricing &amp; promotions</p></div>
+          <div class="bg-white/5 rounded-xl p-4"><p class="text-white text-sm font-bold">Account Health</p><p class="text-slate-400 text-xs mt-1">Suppression fixes</p></div>
+          <div class="bg-white/5 rounded-xl p-4"><p class="text-white text-sm font-bold">Reimbursements</p><p class="text-slate-400 text-xs mt-1">Fee-error auditing</p></div>
+          <div class="bg-white/5 rounded-xl p-4"><p class="text-white text-sm font-bold">Monthly P&amp;L</p><p class="text-slate-400 text-xs mt-1">Review + strategy call</p></div>
+        </div>
+      </div>
+      <div class="order-1 md:order-2">
+        <span class="inline-block bg-brand-orange/15 border border-brand-orange/30 text-brand-orange text-xs font-bold px-4 py-2 rounded-full mb-6">Service B</span>
+        <h2 class="text-3xl md:text-4xl font-black mb-2">Full-Service FBA Management</h2>
+        <p class="text-brand-orange font-semibold text-lg mb-6">Your Amazon channel, run end to end by one accountable team.</p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Dedicated account manager and strategist</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Complete PPC, listing, and inventory oversight</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Pricing, promotions, and Buy Box monitoring</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Account health management and suppression fixes</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Reimbursement claims and fee-error auditing</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Monthly profit and loss review plus strategy call</span></li>
+        </ul>
+        <div class="bg-white/5 border border-white/10 rounded-xl p-5 mb-6"><p class="text-slate-400 text-xs uppercase tracking-wider mb-2">Ideal For</p><p class="text-slate-300 text-sm">Established brands and founders doing $30,000+/month who want growth without hiring an in-house Amazon team.</p></div>
+        <div class="bg-brand-orange/10 border border-brand-orange/30 rounded-xl p-5 mb-8"><p class="text-brand-orange text-xs font-bold uppercase tracking-wider mb-1">Typical Outcome</p><p class="text-white font-bold">Reclaimed time, improving TACoS, and a clear, predictable growth path.</p></div>
+        <a onclick="openAuditModal()" href="#" class="bg-brand-orange hover:bg-brand-orangeHov text-white font-bold px-8 py-3.5 rounded-full btn-glow inline-flex items-center gap-2 transition">Discuss Your Account</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="listing" class="py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 gap-16 items-start reveal">
+      <div>
+        <span class="inline-block bg-brand-orange/15 border border-brand-orange/30 text-brand-orange text-xs font-bold px-4 py-2 rounded-full mb-6">Service C</span>
+        <h2 class="text-3xl md:text-4xl font-black mb-2">Listing Optimization &amp; Creative</h2>
+        <p class="text-brand-orange font-semibold text-lg mb-6">Turn browsers into buyers and paid traffic into organic rank.</p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Keyword research and Amazon SEO-driven titles, bullets, and backend terms</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Conversion-focused main image and secondary image stacks</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">A+ Content and Premium A+ design</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Brand Story and Storefront build-outs</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Competitor gap analysis and review-insight mining</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">A/B testing with Manage Your Experiments</span></li>
+        </ul>
+        <div class="bg-white/5 border border-white/10 rounded-xl p-5 mb-6"><p class="text-slate-400 text-xs uppercase tracking-wider mb-2">Ideal For</p><p class="text-slate-300 text-sm">Sellers with low conversion rates, thin creative, or new launches that need to rank fast.</p></div>
+        <div class="bg-brand-orange/10 border border-brand-orange/30 rounded-xl p-5 mb-8"><p class="text-brand-orange text-xs font-bold uppercase tracking-wider mb-1">Typical Outcome</p><p class="text-white font-bold">10&ndash;35% conversion rate lift and stronger organic keyword indexing.</p></div>
+        <a onclick="openAuditModal()" href="#" class="bg-brand-orange hover:bg-brand-orangeHov text-white font-bold px-8 py-3.5 rounded-full btn-glow inline-flex items-center gap-2 transition">Optimize My Listings</a>
+      </div>
+      <div class="scard p-10 space-y-3">
+        <p class="text-brand-orange font-bold text-sm uppercase tracking-widest mb-4">Deliverables</p>
+        <div class="bg-white/5 rounded-xl p-3"><span class="text-slate-300 text-sm">SEO-optimized product title (full character length)</span></div>
+        <div class="bg-white/5 rounded-xl p-3"><span class="text-slate-300 text-sm">5 keyword-rich bullet points with benefit-first copy</span></div>
+        <div class="bg-white/5 rounded-xl p-3"><span class="text-slate-300 text-sm">Full product description with HTML formatting</span></div>
+        <div class="bg-white/5 rounded-xl p-3"><span class="text-slate-300 text-sm">250-byte backend search terms</span></div>
+        <div class="bg-white/5 rounded-xl p-3"><span class="text-slate-300 text-sm">A+ Content design layout &amp; copy</span></div>
+        <div class="bg-white/5 rounded-xl p-3"><span class="text-slate-300 text-sm">Brand Story and Storefront (up to 5 pages)</span></div>
+        <div class="bg-white/5 rounded-xl p-3"><span class="text-slate-300 text-sm">A/B test setup via Manage Your Experiments</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="logistics" class="py-20 bg-brand-navy/40">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 gap-16 items-start reveal">
+      <div class="scard p-10 order-2 md:order-1 space-y-5">
+        <p class="text-brand-orange font-bold text-sm uppercase tracking-widest mb-2">Process Flow</p>
+        <div class="flex items-start gap-4"><div class="w-8 h-8 bg-brand-orange rounded-full flex items-center justify-center text-white text-xs font-black flex-shrink-0">1</div><div><p class="text-white text-sm font-bold">Demand Forecasting by SKU &amp; Season</p><p class="text-slate-400 text-xs mt-0.5">Data-driven reorder points with seasonal demand curves.</p></div></div>
+        <div class="flex items-start gap-4"><div class="w-8 h-8 bg-brand-orange rounded-full flex items-center justify-center text-white text-xs font-black flex-shrink-0">2</div><div><p class="text-white text-sm font-bold">Replenishment Planning &amp; Reorder Alerts</p><p class="text-slate-400 text-xs mt-0.5">Weekly alerts before you hit danger levels.</p></div></div>
+        <div class="flex items-start gap-4"><div class="w-8 h-8 bg-brand-orange rounded-full flex items-center justify-center text-white text-xs font-black flex-shrink-0">3</div><div><p class="text-white text-sm font-bold">Inbound Shipment Creation &amp; Tracking</p><p class="text-slate-400 text-xs mt-0.5">All FBA shipment plans built and monitored in Seller Central.</p></div></div>
+        <div class="flex items-start gap-4"><div class="w-8 h-8 bg-brand-orange rounded-full flex items-center justify-center text-white text-xs font-black flex-shrink-0">4</div><div><p class="text-white text-sm font-bold">IPI Score &amp; Storage Fee Control</p><p class="text-slate-400 text-xs mt-0.5">Removal and liquidation planning for aged inventory.</p></div></div>
+        <div class="flex items-start gap-4"><div class="w-8 h-8 bg-brand-orange rounded-full flex items-center justify-center text-white text-xs font-black flex-shrink-0">5</div><div><p class="text-white text-sm font-bold">Supplier &amp; Freight-Forwarder Coordination</p><p class="text-slate-400 text-xs mt-0.5">We liaise with your supply chain so you don&rsquo;t have to.</p></div></div>
+      </div>
+      <div class="order-1 md:order-2">
+        <span class="inline-block bg-brand-orange/15 border border-brand-orange/30 text-brand-orange text-xs font-bold px-4 py-2 rounded-full mb-6">Service D</span>
+        <h2 class="text-3xl md:text-4xl font-black mb-2">FBA Logistics &amp; Inventory Management</h2>
+        <p class="text-brand-orange font-semibold text-lg mb-6">Never lose rank to a stockout, and never tie up cash in dead stock.</p>
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Demand forecasting by SKU and season</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Replenishment planning and reorder-point alerts</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Inbound shipment creation and tracking</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">IPI score monitoring and storage-fee control</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Removal and liquidation planning for aged inventory</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Supplier and freight-forwarder coordination</span></li>
+        </ul>
+        <div class="bg-white/5 border border-white/10 rounded-xl p-5 mb-6"><p class="text-slate-400 text-xs uppercase tracking-wider mb-2">Ideal For</p><p class="text-slate-300 text-sm">Sellers who face recurring stockouts, rising storage fees, or cash tied up in the wrong SKUs.</p></div>
+        <div class="bg-brand-orange/10 border border-brand-orange/30 rounded-xl p-5 mb-8"><p class="text-brand-orange text-xs font-bold uppercase tracking-wider mb-1">Typical Outcome</p><p class="text-white font-bold">Fewer stockouts, lower long-term storage fees, and healthier cash flow.</p></div>
+        <a onclick="openAuditModal()" href="#" class="bg-brand-orange hover:bg-brand-orangeHov text-white font-bold px-8 py-3.5 rounded-full btn-glow inline-flex items-center gap-2 transition">Fix My Inventory</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal">
+      <p class="text-brand-orange font-bold text-xs uppercase tracking-widest mb-3">Transparent Pricing</p>
+      <h2 class="text-3xl md:text-5xl font-black mb-4">Simple, Transparent Pricing Built Around <span class="gradient-text">Your Growth</span></h2>
+      <p class="text-slate-400 text-lg max-w-2xl mx-auto">No hidden fees. No ad-spend markups. You always own your accounts and your data.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 reveal">
+      <div class="scard p-8 flex flex-col">
+        <p class="text-brand-orange font-bold text-xs uppercase tracking-widest mb-3">Starter Launch</p>
+        <p class="text-white text-3xl font-black mb-1">$1,500<span class="text-slate-400 text-base font-normal">/mo</span></p>
+        <p class="text-slate-500 text-xs mb-6">3-month minimum</p>
+        <p class="text-slate-400 text-sm mb-6">Best for new or sub-$15k/month brands that need a strong foundation.</p>
+        <ul class="space-y-3 flex-1 mb-8">
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">PPC setup &amp; management (ad spend under $5k/mo)</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Full listing SEO for up to 3 ASINs</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Launch keyword strategy</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Bi-weekly reports &amp; shared Slack channel</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Monthly strategy call</span></li>
+        </ul>
+        <a href="contact.html" class="block text-center border border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white font-bold py-3 rounded-full transition">Start with Starter</a>
+      </div>
+      <div class="scard p-8 flex flex-col border-brand-orange/50 relative overflow-hidden" style="border-color:rgba(249,115,22,.5)">
+        <div class="absolute top-0 inset-x-0 h-1 bg-brand-orange"></div>
+        <div class="flex items-center justify-between mb-3"><p class="text-brand-orange font-bold text-xs uppercase tracking-widest">Growth Management</p><span class="bg-brand-orange/20 text-brand-orange text-xs font-bold px-2 py-1 rounded-full">Most Popular</span></div>
+        <p class="text-white text-3xl font-black mb-1">$2,500<span class="text-slate-400 text-base font-normal">/mo</span></p>
+        <p class="text-slate-500 text-xs mb-6">+ 3% of revenue above $30k</p>
+        <p class="text-slate-400 text-sm mb-6">Best for brands at $15k&ndash;$100k/month focused on profit and scale.</p>
+        <ul class="space-y-3 flex-1 mb-8">
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Everything in Starter</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Advanced PPC: SP, SB &amp; SD campaigns</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">A+ Content for up to 5 ASINs</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Inventory forecasting &amp; replenishment planning</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Weekly reports with TACoS tracking</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Priority Slack support</span></li>
+        </ul>
+        <a href="contact.html" class="block text-center bg-brand-orange hover:bg-brand-orangeHov text-white font-bold py-3 rounded-full btn-glow transition">Choose Growth</a>
+      </div>
+      <div class="scard p-8 flex flex-col">
+        <p class="text-brand-orange font-bold text-xs uppercase tracking-widest mb-3">Full Account Takeover</p>
+        <p class="text-white text-3xl font-black mb-1">From $5,000<span class="text-slate-400 text-base font-normal">/mo</span></p>
+        <p class="text-slate-500 text-xs mb-6">+ 5% of net revenue (custom-quoted)</p>
+        <p class="text-slate-400 text-sm mb-6">Best for established brands that want a fully outsourced Amazon channel.</p>
+        <ul class="space-y-3 flex-1 mb-8">
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Everything in Growth</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Dedicated account manager &amp; strategist</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Full creative production (images, video, Brand Story)</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Logistics, supplier &amp; inbound coordination</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Account health, reimbursement &amp; compliance</span></li>
+          <li class="flex items-start gap-3"><svg class="w-5 h-5 text-brand-orange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg><span class="text-slate-300 text-sm">Monthly P&amp;L review with executive reporting</span></li>
+        </ul>
+        <a href="contact.html" class="block text-center border border-brand-orange text-brand-orange hover:bg-brand-orange hover:text-white font-bold py-3 rounded-full transition">Book a Strategy Call</a>
+      </div>
+    </div>
+    <p class="text-slate-500 text-xs text-center mt-8">Ad spend is paid directly to Amazon from your account. ApexFBA never marks up ad budgets.</p>
+  </div>
+</section>
+
+
+<section class="py-20 bg-gradient-to-r from-brand-orange/10 to-amber-500/5">
+  <div class="max-w-3xl mx-auto px-4 text-center reveal">
+    <h2 class="text-3xl md:text-4xl font-black mb-4">Ready to Scale Your Amazon Store?</h2>
+    <p class="text-slate-400 text-lg mb-8">Get a free personalised audit from a senior strategist within 5 business days.</p>
+    <button onclick="openAuditModal()" class="bg-brand-orange hover:bg-brand-orangeHov text-white font-bold text-lg px-10 py-4 rounded-full btn-glow inline-flex items-center gap-2 group transition">Request My Free Store Audit <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button>
+    <p class="text-slate-500 text-xs mt-4">No contract. No pressure. Yours to keep, even if we never work together.</p>
+  </div>
+</section>
+</main>
+<footer class="bg-brand-blue border-t border-white/10 pt-16 pb-8" role="contentinfo">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 bg-brand-orange rounded-lg flex items-center justify-center">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3z"/></svg>
+          </div>
+          <span class="text-lg font-black text-white">Apex<span class="text-brand-orange">FBA</span></span>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">Independent Amazon service providers helping FBA brand owners optimize account operations, cut ad waste, and scale profitably.</p>
+        <div class="flex items-center gap-3">
+          <a href="mailto:your-email@apexfba.com" class="text-slate-400 hover:text-brand-orange text-xs transition" aria-label="Email ApexFBA">Email</a>
+          <span class="text-white/20">&bull;</span>
+          <a href="tel:+00000000000" class="text-slate-400 hover:text-brand-orange text-xs transition" aria-label="Call ApexFBA">Phone</a>
+          <span class="text-white/20">&bull;</span>
+          <a href="https://wa.me/00000000000" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-brand-orange text-xs transition" aria-label="WhatsApp ApexFBA">WhatsApp</a>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-sm mb-5 uppercase tracking-wider">Amazon Services</h4>
+        <ul class="space-y-2.5">
+          <li><a href="services.html#ppc" class="text-slate-400 hover:text-brand-orange text-sm transition">Amazon PPC Management</a></li>
+          <li><a href="services.html#fba" class="text-slate-400 hover:text-brand-orange text-sm transition">Full-Service FBA Management</a></li>
+          <li><a href="services.html#listing" class="text-slate-400 hover:text-brand-orange text-sm transition">Listing Optimization &amp; Creative</a></li>
+          <li><a href="services.html#logistics" class="text-slate-400 hover:text-brand-orange text-sm transition">FBA Logistics &amp; Inventory</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-sm mb-5 uppercase tracking-wider">Resources</h4>
+        <ul class="space-y-2.5">
+          <li><a href="how-we-help.html" class="text-slate-400 hover:text-brand-orange text-sm transition">How We Help</a></li>
+          <li><a href="case-studies.html" class="text-slate-400 hover:text-brand-orange text-sm transition">Case Studies</a></li>
+          <li><a href="faqs.html" class="text-slate-400 hover:text-brand-orange text-sm transition">Seller FAQs</a></li>
+          <li><a href="testimonials.html" class="text-slate-400 hover:text-brand-orange text-sm transition">Client Reviews</a></li>
+          <li><a href="contact.html" class="text-slate-400 hover:text-brand-orange text-sm transition">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold text-sm mb-5 uppercase tracking-wider">Legal &amp; Compliance</h4>
+        <ul class="space-y-2.5">
+          <li><a href="privacy-policy.html" class="text-slate-400 hover:text-brand-orange text-sm transition">Privacy Policy</a></li>
+          <li><a href="terms.html" class="text-slate-400 hover:text-brand-orange text-sm transition">Terms of Service</a></li>
+          <li><button onclick="document.getElementById('cookieNotice').classList.remove('translate-y-32','opacity-0','pointer-events-none')" class="text-slate-400 hover:text-brand-orange text-sm transition text-left">Cookie Preferences</button></li>
+          <li><a href="mailto:your-email@apexfba.com" class="text-slate-400 hover:text-brand-orange text-sm transition">your-email@apexfba.com</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Official Amazon Trademark Disclaimer -->
+    <div class="border-t border-white/10 pt-6 mt-8">
+      <p class="text-slate-500 text-xs leading-relaxed text-center sm:text-left">
+        <strong class="text-slate-400">Amazon Trademark Disclaimer:</strong> ApexFBA is an independent third-party consulting and marketing agency. ApexFBA is not affiliated with, endorsed by, certified by, or sponsored by Amazon.com, Inc. or any of its subsidiaries. "Amazon", "Amazon FBA", "Seller Central", "Vendor Central", and the Amazon logo are trademarks of Amazon.com, Inc.
+      </p>
+    </div>
+
+    <div class="border-t border-white/5 pt-6 mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-slate-500 text-sm">&copy; 2025 ApexFBA Agency. All rights reserved.</p>
+      <p class="text-slate-600 text-xs">US &bull; UK &bull; Europe &bull; Full-Service Amazon FBA Partner</p>
+    </div>
+  </div>
+</footer>
+
+<!-- COOKIE CONSENT BANNER -->
+<div id="cookieNotice" class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:max-w-md bg-brand-navy/95 border border-white/10 rounded-2xl p-5 shadow-2xl backdrop-blur-xl z-[150] transition-all duration-300 transform translate-y-32 opacity-0 pointer-events-none">
+  <div class="flex items-start gap-3">
+    <div class="w-8 h-8 rounded-lg bg-brand-orange/20 flex items-center justify-center flex-shrink-0 mt-0.5">
+      <svg class="w-4 h-4 text-brand-orange" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 2a8 8 0 100 16 8 8 0 000-16zm-1 4a1 1 0 012 0v4a1 1 0 01-2 0V6zm1 9a1.25 1.25 0 100-2.5 1.25 1.25 0 000 2.5z" clip-rule="evenodd"/></svg>
+    </div>
+    <div class="flex-1">
+      <p class="text-white text-xs font-bold mb-1">Cookie &amp; Privacy Notice</p>
+      <p class="text-slate-400 text-xs leading-relaxed mb-4">We use essential cookies and anonymous analytics to deliver our store audits and improve site performance. Learn more in our <a href="privacy-policy.html" class="text-brand-orange underline">Privacy Policy</a>.</p>
+      <div class="flex items-center gap-2">
+        <button onclick="acceptCookies()" class="bg-brand-orange hover:bg-brand-orangeHov text-white text-xs font-bold px-4 py-2 rounded-lg transition">Accept</button>
+        <button onclick="declineCookies()" class="bg-white/10 hover:bg-white/15 text-slate-300 text-xs font-semibold px-4 py-2 rounded-lg transition">Decline</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  // 1. Reveal on scroll
+  const obs = new IntersectionObserver(e => e.forEach(r => {
+    if (r.isIntersecting) {
+      r.target.classList.add('visible');
+      obs.unobserve(r.target);
+    }
+  }), { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(r => obs.observe(r));
+
+  // 2. Escape key listener
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      closeAuditModal();
+    }
+  });
+
+  // 3. Audit Modal Logic
+  function openAuditModal() {
+    const modal = document.getElementById('auditModal');
+    if (!modal) return;
+    modal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+    const firstInput = modal.querySelector('input');
+    if (firstInput) firstInput.focus();
+  }
+  function closeAuditModal() {
+    const modal = document.getElementById('auditModal');
+    if (!modal) return;
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  const closeBtn = document.getElementById('auditModalClose');
+  if (closeBtn) closeBtn.addEventListener('click', closeAuditModal);
+  const auditModal = document.getElementById('auditModal');
+  if (auditModal) {
+    auditModal.addEventListener('click', function(e) {
+      if (e.target === this) closeAuditModal();
+    });
+  }
+
+  // 4. Form Submission Backend Handler
+  async function auditFormSubmit(e) {
+    e.preventDefault();
+    const form = document.getElementById('auditModalForm');
+    const errorBox = document.getElementById('auditModalError');
+    const successBox = document.getElementById('auditModalSuccess');
+    const name = document.getElementById('auditName').value.trim();
+    const email = document.getElementById('auditEmail').value.trim();
+    const brand = document.getElementById('auditBrand').value.trim();
+    const asin = document.getElementById('auditAsin').value.trim();
+    const marketplace = document.getElementById('auditMarketplace').value;
+    const revenue = document.getElementById('auditRevenue').value;
+    
+    // Validation
+    const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!name || !email || !emailValid || !brand || !asin || !marketplace || !revenue) {
+      if (errorBox) errorBox.classList.remove('hidden');
+      return;
+    }
+    if (errorBox) errorBox.classList.add('hidden');
+
+    const submitBtn = document.getElementById('auditSubmitBtn');
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerText = 'Submitting Audit Request...';
+    }
+
+    const accessKey = form.querySelector('input[name="access_key"]')?.value || '';
+    if (!accessKey || accessKey === 'YOUR_ACCESS_KEY_HERE') {
+      console.info('Audit Form: Simulation Mode active. Replace YOUR_ACCESS_KEY_HERE with your Web3Forms or Formspree key in the form HTML to receive real email submissions.');
+      setTimeout(() => {
+        form.classList.add('hidden');
+        if (successBox) successBox.classList.remove('hidden');
+      }, 500);
+      return;
+    }
+
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: new FormData(form)
+      });
+      const data = await res.json();
+      if (data.success) {
+        form.classList.add('hidden');
+        if (successBox) successBox.classList.remove('hidden');
+      } else {
+        if (errorBox) {
+          errorBox.innerText = data.message || 'Submission error. Please try again.';
+          errorBox.classList.remove('hidden');
+        }
+      }
+    } catch (err) {
+      if (errorBox) {
+        errorBox.innerText = 'Network error. Please try again or email us directly.';
+        errorBox.classList.remove('hidden');
+      }
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerText = 'Get My Free Audit →';
+      }
+    }
+  }
+
+  // 5. FAQ accordion toggle
+  function toggleFaq(btn) {
+    const body = btn.nextElementSibling;
+    const isOpen = body.classList.contains('open');
+    document.querySelectorAll('.ab.open').forEach(b => {
+      b.classList.remove('open');
+      const icon = b.previousElementSibling.querySelector('svg');
+      if (icon) icon.style.transform = 'rotate(0deg)';
+    });
+    if (!isOpen) {
+      body.classList.add('open');
+      const icon = btn.querySelector('svg');
+      if (icon) icon.style.transform = 'rotate(180deg)';
+    }
+  }
+
+  // 6. Cookie Consent Management
+  function checkCookieConsent() {
+    if (!localStorage.getItem('apexfba_cookies')) {
+      setTimeout(() => {
+        const el = document.getElementById('cookieNotice');
+        if (el) el.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
+      }, 1000);
+    }
+  }
+  function acceptCookies() {
+    localStorage.setItem('apexfba_cookies', 'accepted');
+    closeCookieNotice();
+  }
+  function declineCookies() {
+    localStorage.setItem('apexfba_cookies', 'declined');
+    closeCookieNotice();
+  }
+  function closeCookieNotice() {
+    const el = document.getElementById('cookieNotice');
+    if (el) el.classList.add('translate-y-32', 'opacity-0', 'pointer-events-none');
+  }
+  document.addEventListener('DOMContentLoaded', checkCookieConsent);
+</script>
+</body>
+</html>
