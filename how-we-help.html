@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How We Help | The Apex Growth System for Amazon Brands</title>
+<title>How We Help | The Haseeb Qafi Growth System for Amazon Brands</title>
 <meta name="description" content="Our proven 5-step methodology: Audit, Architect, Accelerate, Automate, and Analyze. Predictable Amazon profit without vanity metrics.">
 <meta name="keywords" content="Amazon growth system, Amazon agency process, FBA onboarding, TACoS methodology">
 <meta name="robots" content="index, follow">
@@ -12,26 +12,26 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://haseebqafi.com/how-we-help.html">
-<meta property="og:title" content="How We Help | The Apex Growth System for Amazon Brands">
+<meta property="og:title" content="How We Help | The Haseeb Qafi Growth System for Amazon Brands">
 <meta property="og:description" content="Our proven 5-step methodology: Audit, Architect, Accelerate, Automate, and Analyze. Predictable Amazon profit without vanity metrics.">
 <meta property="og:image" content="https://haseebqafi.com/og-image.jpg">
-<meta property="og:site_name" content="ApexFBA">
+<meta property="og:site_name" content="HaseebQafi">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://haseebqafi.com/how-we-help.html">
-<meta name="twitter:title" content="How We Help | The Apex Growth System for Amazon Brands">
+<meta name="twitter:title" content="How We Help | The Haseeb Qafi Growth System for Amazon Brands">
 <meta name="twitter:description" content="Our proven 5-step methodology: Audit, Architect, Accelerate, Automate, and Analyze. Predictable Amazon profit without vanity metrics.">
 <meta name="twitter:image" content="https://haseebqafi.com/og-image.jpg">
 
 <!-- Favicon (Inline SVG Data URI) -->
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f97316'%3E%3Cpath d='M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3z'/%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f172a'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='900' font-size='16' fill='%23f97316'%3EHQ%3C/text%3E%3C/svg%3E">
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": ["Organization", "ProfessionalService"],
-  "name": "ApexFBA",
+  "name": "HaseebQafi",
   "url": "https://haseebqafi.com",
   "logo": "https://haseebqafi.com/logo.svg",
   "description": "Our proven 5-step methodology: Audit, Architect, Accelerate, Automate, and Analyze. Predictable Amazon profit without vanity metrics.",
@@ -68,120 +68,18 @@
 .reveal.visible{opacity:1;transform:none}
 html{scroll-behavior:smooth}
 .ab{display:none}.ab.open{display:block}
-#auditModal{display:none}#auditModal.open{display:flex}
+
 </style>
 </head>
 <body class="bg-brand-blue text-white overflow-x-hidden">
-<!-- FREE STORE AUDIT MODAL — opens ONLY via openAuditModal() -->
-<div id="auditModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" class="fixed inset-0 z-[200] items-center justify-center px-4" style="background:rgba(0,0,0,.82);backdrop-filter:blur(8px);display:none">
-  <div class="bg-brand-navy border border-white/10 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8 relative shadow-2xl">
-    <button id="auditModalClose" class="absolute top-4 right-4 text-slate-400 hover:text-white transition p-2 focus:outline-none" aria-label="Close Audit Modal">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
-    </button>
-    <p class="text-brand-orange font-bold text-xs uppercase tracking-widest mb-2">Free Store Audit</p>
-    <h2 id="modalTitle" class="text-2xl font-black mb-1">Request Your Free Amazon Store Audit</h2>
-    <p class="text-slate-400 text-sm mb-6">A senior strategist will review your account and deliver a profit roadmap within 5 business days &mdash; 100% free, no obligation.</p>
-    
-    <div id="auditModalError" class="hidden mb-4 p-3 rounded-xl bg-red-500/10 border border-red-500/30 text-red-300 text-xs">
-      Something went wrong. Please check all required fields and try again.
-    </div>
-
-    <form id="auditModalForm" onsubmit="auditFormSubmit(event)" novalidate class="space-y-4">
-      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
-      <input type="hidden" name="form_type" value="Free Store Audit Request">
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Full Name *</label>
-          <input type="text" id="auditName" name="name" required placeholder="John Smith" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-sm">
-        </div>
-        <div>
-          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Business Email *</label>
-          <input type="email" id="auditEmail" name="email" required placeholder="hello@yourbrand.com" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-sm">
-        </div>
-      </div>
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Phone / WhatsApp (optional)</label>
-          <input type="tel" id="auditPhone" name="phone" placeholder="+1 234 567 8900" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-sm">
-        </div>
-        <div>
-          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Brand / Store Name *</label>
-          <input type="text" id="auditBrand" name="brand" required placeholder="Your Brand Name" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-sm">
-        </div>
-      </div>
-      <div>
-        <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Amazon Store URL or ASIN *</label>
-        <input type="text" id="auditAsin" name="store_url_or_asin" required placeholder="https://amazon.com/dp/B0XXXXXX or ASIN" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-sm">
-      </div>
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Marketplace *</label>
-          <select id="auditMarketplace" name="marketplace" required class="w-full bg-brand-blue border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-orange transition text-sm">
-            <option value="" disabled selected>Select marketplace</option>
-            <option value="Amazon US">Amazon US</option>
-            <option value="Amazon UK">Amazon UK</option>
-            <option value="Both US & UK">Both US &amp; UK</option>
-            <option value="Amazon Canada">Amazon Canada</option>
-            <option value="Amazon Europe">Amazon Europe</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
-        <div>
-          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Monthly Revenue *</label>
-          <select id="auditRevenue" name="revenue" required class="w-full bg-brand-blue border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-orange transition text-sm">
-            <option value="" disabled selected>Select range</option>
-            <option value="Under $5k/mo">Under $5k/mo</option>
-            <option value="$5k-$15k/mo">$5k&ndash;$15k/mo</option>
-            <option value="$15k-$50k/mo">$15k&ndash;$50k/mo</option>
-            <option value="$50k+/mo">$50k+/mo</option>
-          </select>
-        </div>
-      </div>
-      <div class="grid sm:grid-cols-2 gap-4">
-        <div>
-          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Monthly Ad Spend</label>
-          <input type="text" id="auditAdSpend" name="ad_spend" placeholder="e.g. $2,000/mo" class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-sm">
-        </div>
-        <div>
-          <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Biggest Challenge</label>
-          <select id="auditChallenge" name="biggest_challenge" class="w-full bg-brand-blue border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-orange transition text-sm">
-            <option value="" disabled selected>Select challenge</option>
-            <option value="High ACoS / Low Profit">High ACoS / Low Profit</option>
-            <option value="Stockouts & Inventory Management">Stockouts &amp; Inventory Management</option>
-            <option value="Low Organic Ranking">Low Organic Ranking</option>
-            <option value="Listing Conversion & Creative">Listing Conversion &amp; Creative</option>
-            <option value="Time & Daily Account Operations">Time &amp; Daily Account Operations</option>
-          </select>
-        </div>
-      </div>
-      <div>
-        <label class="block text-slate-400 text-xs font-semibold uppercase tracking-wider mb-1.5">Anything Else We Should Know?</label>
-        <textarea id="auditNotes" name="notes" rows="3" placeholder="Tell us your main pain point..." class="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-sm resize-none"></textarea>
-      </div>
-      <button type="submit" id="auditSubmitBtn" class="w-full bg-brand-orange hover:bg-brand-orangeHov text-white font-bold text-lg py-4 rounded-xl btn-glow transition">Get My Free Audit &rarr;</button>
-      <p class="text-slate-500 text-xs text-center">Your information is confidential and protected. We will never ask for your Amazon password.</p>
-    </form>
-    <div id="auditModalSuccess" class="hidden text-center py-8">
-      <div class="w-14 h-14 bg-green-500/20 border border-green-500/30 rounded-full flex items-center justify-center mx-auto mb-4">
-        <svg class="w-7 h-7 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-      </div>
-      <h3 class="text-xl font-black mb-2">Audit Request Received!</h3>
-      <p class="text-slate-400 text-sm">We&rsquo;ll review your account details and deliver your personalised growth roadmap within 3&ndash;5 business days.</p>
-    </div>
-  </div>
-</div>
+<!-- FREE STORE AUDIT MODAL — opens ONLY via window.location.href='index.html#audit' -->
 <header class="fixed top-0 inset-x-0 z-50 glass-nav border-b border-white/10" role="banner">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
-    <a href="index.html" class="flex items-center gap-2 group flex-shrink-0" aria-label="ApexFBA Home">
-      <div class="w-8 h-8 rounded-lg bg-brand-orange flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform">
-        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3z"/></svg>
-      </div>
-      <span class="text-xl font-black text-white tracking-tight">Apex<span class="text-brand-orange">FBA</span></span>
-    </a>
+    <a href="index.html" class="text-2xl font-extrabold tracking-tight text-white flex-shrink-0" aria-label="HaseebQafi Home">Haseeb<span class="text-brand-orange">Qafi</span></a>
     <nav class="hidden md:flex items-center gap-3 lg:gap-5" aria-label="Main Navigation">
       <a href="index.html" class="text-slate-400 hover:text-white font-medium text-xs lg:text-sm transition focus:outline-none focus:ring-1 focus:ring-brand-orange rounded px-1">Home</a>
       <div class="relative group">
-        <button type="button" aria-expanded="false" class="flex items-center gap-1 text-slate-400 hover:text-white font-medium text-xs lg:text-sm focus:outline-none focus:ring-1 focus:ring-brand-orange rounded px-1">
+        <button type="button" aria-expanded="false" class="flex items-center gap-1 text-slate-400 hover:text-white font-medium text-xs lg:text-sm transition focus:outline-none focus:ring-1 focus:ring-brand-orange rounded px-1">
           Services
           <svg class="w-4 h-4 ml-0.5 group-hover:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
         </button>
@@ -195,7 +93,7 @@ html{scroll-behavior:smooth}
           </div>
           <div class="border-t border-white/10 mt-4 pt-3 flex items-center justify-between">
             <p class="text-slate-500 text-xs">Not sure which service fits? We&rsquo;ll guide you.</p>
-            <button onclick="openAuditModal()" class="text-xs font-bold text-brand-orange hover:underline focus:outline-none">Get Free Audit &rarr;</button>
+            <a href="index.html#audit" class="text-xs font-bold text-brand-orange hover:underline focus:outline-none">Get Free Audit &rarr;</a>
           </div>
         </div>
       </div>
@@ -203,8 +101,7 @@ html{scroll-behavior:smooth}
       <a href="case-studies.html" class="text-slate-400 hover:text-white font-medium text-xs lg:text-sm transition focus:outline-none focus:ring-1 focus:ring-brand-orange rounded px-1">Case Studies</a>
       <a href="faqs.html" class="text-slate-400 hover:text-white font-medium text-xs lg:text-sm transition focus:outline-none focus:ring-1 focus:ring-brand-orange rounded px-1">FAQs</a>
       <a href="testimonials.html" class="text-slate-400 hover:text-white font-medium text-xs lg:text-sm transition focus:outline-none focus:ring-1 focus:ring-brand-orange rounded px-1">Testimonials</a>
-      <a href="contact.html" class="text-slate-400 hover:text-white font-medium text-xs lg:text-sm transition focus:outline-none focus:ring-1 focus:ring-brand-orange rounded px-1">Contact Us</a>
-      <button onclick="openAuditModal()" class="bg-brand-orange hover:bg-brand-orangeHov text-white text-xs lg:text-sm font-bold px-4 lg:px-5 py-2 lg:py-2.5 rounded-full btn-glow transition focus:outline-none focus:ring-2 focus:ring-brand-orange flex-shrink-0">Free Store Audit</button>
+      <a href="index.html#audit" class="bg-brand-orange hover:bg-brand-orangeHov text-white text-xs lg:text-sm font-bold px-4 lg:px-5 py-2 lg:py-2.5 rounded-full btn-glow transition focus:outline-none focus:ring-2 focus:ring-brand-orange flex-shrink-0">Free Store Audit</a>
     </nav>
     <button class="md:hidden p-2 text-slate-400 hover:text-white focus:outline-none" aria-label="Toggle Navigation Menu" onclick="document.getElementById('mob').classList.toggle('hidden')">
       <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -217,8 +114,7 @@ html{scroll-behavior:smooth}
     <a href="case-studies.html" class="block px-3 py-2.5 text-white hover:text-brand-orange font-medium text-sm rounded-lg hover:bg-white/5 transition">Case Studies</a>
     <a href="faqs.html" class="block px-3 py-2.5 text-white hover:text-brand-orange font-medium text-sm rounded-lg hover:bg-white/5 transition">FAQs</a>
     <a href="testimonials.html" class="block px-3 py-2.5 text-white hover:text-brand-orange font-medium text-sm rounded-lg hover:bg-white/5 transition">Testimonials</a>
-    <a href="contact.html" class="block px-3 py-2.5 text-white hover:text-brand-orange font-medium text-sm rounded-lg hover:bg-white/5 transition">Contact Us</a>
-    <button onclick="openAuditModal()" class="block w-full bg-brand-orange text-white text-center py-2.5 rounded-xl text-sm font-bold mt-2">Free Store Audit</button>
+    <a href="index.html#audit" class="block w-full bg-brand-orange text-white text-center py-2.5 rounded-xl text-sm font-bold mt-2">Free Store Audit</a>
   </div>
 </header>
 <main class="pt-16">
@@ -306,25 +202,19 @@ html{scroll-behavior:smooth}
   <div class="max-w-3xl mx-auto px-4 text-center reveal">
     <h2 class="text-3xl md:text-4xl font-black mb-4">Ready to Scale Your Amazon Store?</h2>
     <p class="text-slate-400 text-lg mb-8">Get a free personalised audit from a senior strategist within 5 business days.</p>
-    <button onclick="openAuditModal()" class="bg-brand-orange hover:bg-brand-orangeHov text-white font-bold text-lg px-10 py-4 rounded-full btn-glow inline-flex items-center gap-2 group transition">Request My Free Store Audit <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button>
+    <button href="index.html#audit" class="bg-brand-orange hover:bg-brand-orangeHov text-white font-bold text-lg px-10 py-4 rounded-full btn-glow inline-flex items-center gap-2 group transition">Request My Free Store Audit <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg></button>
     <p class="text-slate-500 text-xs mt-4">No contract. No pressure. Yours to keep, even if we never work together.</p>
   </div>
 </section>
 </main>
 <footer class="bg-brand-blue border-t border-white/10 pt-16 pb-8" role="contentinfo">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mb-12">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 mb-12">
       <div>
-        <div class="flex items-center gap-2 mb-4">
-          <div class="w-8 h-8 bg-brand-orange rounded-lg flex items-center justify-center">
-            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3z"/></svg>
-          </div>
-          <span class="text-lg font-black text-white">Apex<span class="text-brand-orange">FBA</span></span>
+        <div class="mb-4">
+          <a href="index.html" class="text-2xl font-extrabold tracking-tight text-white">Haseeb<span class="text-brand-orange">Qafi</span></a>
         </div>
         <p class="text-slate-400 text-sm leading-relaxed mb-4">Independent Amazon service providers helping FBA brand owners optimize account operations, cut ad waste, and scale profitably.</p>
-        <div class="flex items-center gap-3">
-          <a href="mailto:hello@haseebqafi.com" class="text-slate-400 hover:text-brand-orange text-xs transition" aria-label="Email ApexFBA">hello@haseebqafi.com</a>
-        </div>
       </div>
       <div>
         <h4 class="text-white font-bold text-sm mb-5 uppercase tracking-wider">Amazon Services</h4>
@@ -346,12 +236,22 @@ html{scroll-behavior:smooth}
         </ul>
       </div>
       <div>
+        <h4 class="text-white font-bold text-sm mb-5 uppercase tracking-wider">Blogs</h4>
+        <ul class="space-y-2.5">
+          <li><a href="blog-1.html" class="text-slate-400 hover:text-brand-orange text-sm transition">What Is FBA Management?</a></li>
+          <li><a href="blog-2.html" class="text-slate-400 hover:text-brand-orange text-sm transition">Profitable Product Selection</a></li>
+          <li><a href="blog-3.html" class="text-slate-400 hover:text-brand-orange text-sm transition">Listing &amp; A+ Content</a></li>
+          <li><a href="blog-4.html" class="text-slate-400 hover:text-brand-orange text-sm transition">Amazon PPC for Beginners</a></li>
+          <li><a href="blog-5.html" class="text-slate-400 hover:text-brand-orange text-sm transition">Top 7 FBA Profit Mistakes</a></li>
+          <li><a href="blogs.html" class="text-brand-orange hover:underline text-sm font-semibold transition">All Blogs &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
         <h4 class="text-white font-bold text-sm mb-5 uppercase tracking-wider">Legal &amp; Compliance</h4>
         <ul class="space-y-2.5">
           <li><a href="privacy-policy.html" class="text-slate-400 hover:text-brand-orange text-sm transition">Privacy Policy</a></li>
           <li><a href="terms.html" class="text-slate-400 hover:text-brand-orange text-sm transition">Terms of Service</a></li>
           <li><button onclick="document.getElementById('cookieNotice').classList.remove('translate-y-32','opacity-0','pointer-events-none')" class="text-slate-400 hover:text-brand-orange text-sm transition text-left">Cookie Preferences</button></li>
-          <li><a href="mailto:hello@haseebqafi.com" class="text-slate-400 hover:text-brand-orange text-sm transition">hello@haseebqafi.com</a></li>
         </ul>
       </div>
     </div>
@@ -359,12 +259,12 @@ html{scroll-behavior:smooth}
     <!-- Official Amazon Trademark Disclaimer -->
     <div class="border-t border-white/10 pt-6 mt-8">
       <p class="text-slate-500 text-xs leading-relaxed text-center sm:text-left">
-        <strong class="text-slate-400">Amazon Trademark Disclaimer:</strong> ApexFBA is an independent third-party consulting and marketing agency. ApexFBA is not affiliated with, endorsed by, certified by, or sponsored by Amazon.com, Inc. or any of its subsidiaries. "Amazon", "Amazon FBA", "Seller Central", "Vendor Central", and the Amazon logo are trademarks of Amazon.com, Inc.
+        <strong class="text-slate-400">Amazon Trademark Disclaimer:</strong> Haseeb Qafi is an independent third-party consulting and marketing agency. Haseeb Qafi is not affiliated with, endorsed by, certified by, or sponsored by Amazon.com, Inc. or any of its subsidiaries. "Amazon", "Amazon FBA", "Seller Central", "Vendor Central", and the Amazon logo are trademarks of Amazon.com, Inc.
       </p>
     </div>
 
     <div class="border-t border-white/5 pt-6 mt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <p class="text-slate-500 text-sm">&copy; 2025 ApexFBA Agency. All rights reserved.</p>
+      <p class="text-slate-500 text-sm">&copy; 2026 Haseeb Qafi. All rights reserved.</p>
       <p class="text-slate-600 text-xs">US &bull; UK &bull; Europe &bull; Full-Service Amazon FBA Partner</p>
     </div>
   </div>
@@ -396,101 +296,6 @@ html{scroll-behavior:smooth}
   }), { threshold: 0.08 });
   document.querySelectorAll('.reveal').forEach(r => obs.observe(r));
 
-  // 2. Escape key listener
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') {
-      closeAuditModal();
-    }
-  });
-
-  // 3. Audit Modal Logic
-  function openAuditModal() {
-    const modal = document.getElementById('auditModal');
-    if (!modal) return;
-    modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-    const firstInput = modal.querySelector('input');
-    if (firstInput) firstInput.focus();
-  }
-  function closeAuditModal() {
-    const modal = document.getElementById('auditModal');
-    if (!modal) return;
-    modal.style.display = 'none';
-    document.body.style.overflow = '';
-  }
-  const closeBtn = document.getElementById('auditModalClose');
-  if (closeBtn) closeBtn.addEventListener('click', closeAuditModal);
-  const auditModal = document.getElementById('auditModal');
-  if (auditModal) {
-    auditModal.addEventListener('click', function(e) {
-      if (e.target === this) closeAuditModal();
-    });
-  }
-
-  // 4. Form Submission Backend Handler
-  async function auditFormSubmit(e) {
-    e.preventDefault();
-    const form = document.getElementById('auditModalForm');
-    const errorBox = document.getElementById('auditModalError');
-    const successBox = document.getElementById('auditModalSuccess');
-    const name = document.getElementById('auditName').value.trim();
-    const email = document.getElementById('auditEmail').value.trim();
-    const brand = document.getElementById('auditBrand').value.trim();
-    const asin = document.getElementById('auditAsin').value.trim();
-    const marketplace = document.getElementById('auditMarketplace').value;
-    const revenue = document.getElementById('auditRevenue').value;
-    
-    // Validation
-    const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    if (!name || !email || !emailValid || !brand || !asin || !marketplace || !revenue) {
-      if (errorBox) errorBox.classList.remove('hidden');
-      return;
-    }
-    if (errorBox) errorBox.classList.add('hidden');
-
-    const submitBtn = document.getElementById('auditSubmitBtn');
-    if (submitBtn) {
-      submitBtn.disabled = true;
-      submitBtn.innerText = 'Submitting Audit Request...';
-    }
-
-    const accessKey = form.querySelector('input[name="access_key"]')?.value || '';
-    if (!accessKey || accessKey === 'YOUR_ACCESS_KEY_HERE') {
-      setTimeout(() => {
-        form.classList.add('hidden');
-        if (successBox) successBox.classList.remove('hidden');
-      }, 500);
-      return;
-    }
-
-    try {
-      const res = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: new FormData(form)
-      });
-      const data = await res.json();
-      if (data.success) {
-        form.classList.add('hidden');
-        if (successBox) successBox.classList.remove('hidden');
-      } else {
-        if (errorBox) {
-          errorBox.innerText = data.message || 'Submission error. Please try again.';
-          errorBox.classList.remove('hidden');
-        }
-      }
-    } catch (err) {
-      if (errorBox) {
-        errorBox.innerText = 'Network error. Please try again or email us directly.';
-        errorBox.classList.remove('hidden');
-      }
-    } finally {
-      if (submitBtn) {
-        submitBtn.disabled = false;
-        submitBtn.innerText = 'Get My Free Audit →';
-      }
-    }
-  }
-
   // 5. FAQ accordion toggle
   function toggleFaq(btn) {
     const body = btn.nextElementSibling;
@@ -509,7 +314,7 @@ html{scroll-behavior:smooth}
 
   // 6. Cookie Consent Management
   function checkCookieConsent() {
-    if (!localStorage.getItem('apexfba_cookies')) {
+    if (!localStorage.getItem('hq_cookies')) {
       setTimeout(() => {
         const el = document.getElementById('cookieNotice');
         if (el) el.classList.remove('translate-y-32', 'opacity-0', 'pointer-events-none');
@@ -517,11 +322,11 @@ html{scroll-behavior:smooth}
     }
   }
   function acceptCookies() {
-    localStorage.setItem('apexfba_cookies', 'accepted');
+    localStorage.setItem('hq_cookies', 'accepted');
     closeCookieNotice();
   }
   function declineCookies() {
-    localStorage.setItem('apexfba_cookies', 'declined');
+    localStorage.setItem('hq_cookies', 'declined');
     closeCookieNotice();
   }
   function closeCookieNotice() {
