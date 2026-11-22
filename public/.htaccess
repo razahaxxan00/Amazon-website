@@ -1,0 +1,29 @@
+# Apache / LiteSpeed Rewrite Configuration for Aabzone.com
+RewriteEngine On
+
+# 1. 301 Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.aabzone\.com$ [NC]
+RewriteRule ^(.*)$ https://aabzone.com/$1 [R=301,L]
+
+# 2. 301 Redirect index.html to root
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ https://aabzone.com/ [R=301,L]
+
+# 3. 301 Redirect .html URLs to extensionless URLs
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /([^.]+)\.html\ HTTP/
+RewriteRule ^([^.]+)\.html$ https://aabzone.com/$1 [R=301,L]
+
+# 4. Internally rewrite extensionless requests to .html files if file exists
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Security Headers & Caching
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  <FilesMatch "\.(ico|jpg|jpeg|png|gif|svg|webp|js|css|woff2)$">
+    Header set Cache-Control "max-age=31536000, public, immutable"
+  </FilesMatch>
+</IfModule>
