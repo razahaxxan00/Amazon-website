@@ -172,7 +172,7 @@ async function handleAuditModalSubmit(e) {
     if (errorBox) {
       var pErr = errorBox.querySelector('p:last-child');
       if (pErr) {
-        pErr.innerText = 'Unable to send request right now. Please email us directly at contact@aabzone.com.';
+        pErr.innerText = 'Unable to send request right now. Please try submitting again shortly.';
       }
       errorBox.classList.remove('hidden');
     }
