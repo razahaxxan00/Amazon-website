@@ -12,16 +12,6 @@
       ],
       "destination": "https://aabzone.com/:path*",
       "permanent": true
-    },
-    {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
-    },
-    {
-      "source": "/:page.html",
-      "destination": "/:page",
-      "permanent": true
     }
   ]
 }
