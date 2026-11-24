@@ -102,7 +102,7 @@ async function handleAuditModalSubmit(e) {
   var name = (nameEl ? nameEl.value : '').trim();
   var email = (emailEl ? emailEl.value : '').trim();
   var asin = (asinEl ? asinEl.value : '').trim();
-  var challenge = challengeEl ? challengeEl.value : '';
+  var challenge = (challengeEl ? challengeEl.value : '').trim();
 
   // 1. Honeypot anti-spam check
   var botcheck = form.querySelector('input[name="botcheck"]');

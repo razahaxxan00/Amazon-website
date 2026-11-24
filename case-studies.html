@@ -331,22 +331,9 @@
         <input type="text" id="auditModalAsin" name="asin_store" required placeholder="https://amazon.com/dp/B0... or ASIN" class="w-full bg-white/5 border border-white/10 rounded-xl px-3.5 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-base sm:text-sm min-h-[44px]">
       </div>
 
-      <div>
+            <div>
         <label for="auditModalChallenge" class="block text-slate-300 text-xs font-semibold uppercase tracking-wider mb-1.5">Biggest Challenge</label>
-        <div class="relative">
-          <select id="auditModalChallenge" name="challenge" class="w-full bg-brand-navy border border-white/10 rounded-xl px-3.5 py-3 text-white focus:outline-none focus:border-brand-orange transition text-base sm:text-sm min-h-[44px] appearance-none cursor-pointer">
-            <option value="" disabled selected>Select main challenge</option>
-            <option value="High ACoS / Low Profit">High ACoS / Low Profit</option>
-            <option value="Stockouts & Inventory Management">Stockouts &amp; Inventory Management</option>
-            <option value="Low Organic Ranking">Low Organic Ranking</option>
-            <option value="Listing Conversion & Creative">Listing Conversion &amp; Creative</option>
-            <option value="Full Account Management">Full Account Management</option>
-            <option value="Other">Other</option>
-          </select>
-          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3.5 text-slate-400">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </div>
-        </div>
+        <textarea id="auditModalChallenge" name="challenge" rows="2" placeholder="Describe your biggest challenge (e.g. high ACoS, stockouts, low organic rank)" class="w-full bg-white/5 border border-white/10 rounded-xl px-3.5 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-brand-orange transition text-base sm:text-sm resize-none"></textarea>
       </div>
 
       <div class="pt-2">
